@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="color-scheme" content="light only">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lightpick.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="settings.html" style="display: block; margin-bottom: 20px;">
+            Настройки
+        </a>
+        <a href="settings2.html" style="display: block; margin-bottom: 20px;">
+            Настройки
+        </a>
+        <a href="cluster.html" style="display: block; margin-bottom: 20px;">
+            Кластеры
+        </a>
+
+
+
+
+        <button data-modal="editClusterModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Быстрый заказ
+        </button>
+    </div>
+
+
+
+
+
+
+
+    <div class="modal" id="editClusterModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top _flex-between">
+                <div class="text16 semi-bold-text">
+                    Редактирование кластера
+                </div>
+                <button class="close-btn _close-modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M11.9324 3.04494C12.2146 2.76269 12.6726 2.76269 12.9548 3.04494C13.2371 3.32718 13.2371 3.78515 12.9548 4.0674L9.02223 8.00001L12.9548 11.9326C13.2371 12.2149 13.2371 12.6728 12.9548 12.9551C12.6726 13.2373 12.2146 13.2373 11.9324 12.9551L7.99977 9.02248L4.06715 12.9551C3.78491 13.2373 3.32694 13.2373 3.04469 12.9551C2.76245 12.6728 2.76245 12.2149 3.04469 11.9326L6.97731 8.00001L3.04469 4.0674C2.76245 3.78515 2.76245 3.32718 3.04469 3.04494C3.32694 2.76269 3.78491 2.76269 4.06715 3.04494L7.99977 6.97755L11.9324 3.04494Z" fill="#676A72" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal__content">
+                <form class="modal-form">
+                    <div class="modal-form__grid">
+                        <div class="fg fg-big _full">
+                            <label>Кластер</label>
+                            <input type="text">
+                        </div>
+                        <div class="fg fg-big _col2">
+                            <label>Добавлен</label>
+                            <input type="text" disabled>
+                        </div>
+                        <div class="fg fg-big _col2">
+                            <label>Изменен</label>
+                            <input type="text" disabled>
+                        </div>
+                        <div class="fg fg-big">
+                            <label>Частотность</label>
+                            <input type="text">
+                        </div>
+                        <div class="fg fg-big">
+                            <label>Конкурентность</label>
+                            <input type="text">
+                        </div>
+                        <div class="fg fg-big">
+                            <label>Товары</label>
+                            <input type="text">
+                        </div>
+                        <div class="fg fg-big _full">
+                            <label>БАА</label>
+                            <input type="text">
+                        </div>
+                        <div class="fg fg-big _full">
+                            <label>Модификация</label>
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal__bottom">
+                <button class="m-btn m-btn-green">
+                    <span>Сохранить</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/lightpick.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

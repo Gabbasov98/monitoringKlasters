@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="color-scheme" content="light only">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lightpick.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Кластеры</title>
+</head>
+
+
+<body class="m-page">
+    <div class="wrapper">
+
+        <div class="page-header">
+            <div class="page-header__top _flex">
+                <a href="" class="back-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path d="M15.6373 8.99993C15.6354 9.14851 15.5755 9.29046 15.4704 9.39553C15.3653 9.5006 15.2234 9.56049 15.0748 9.56243H8.9548V11.9999C8.96066 12.0893 8.93828 12.1783 8.89084 12.2543C8.84339 12.3303 8.77328 12.3894 8.69039 12.4234C8.60751 12.4574 8.51604 12.4645 8.42891 12.4437C8.34178 12.4229 8.26339 12.3752 8.2048 12.3074L5.2048 9.30743C5.12602 9.22746 5.08186 9.1197 5.08186 9.00743C5.08186 8.89517 5.12602 8.78741 5.2048 8.70743L8.2048 5.70743C8.26261 5.64092 8.33957 5.59389 8.42514 5.57279C8.5107 5.5517 8.6007 5.55756 8.68281 5.58958C8.76491 5.6216 8.83511 5.67822 8.8838 5.75167C8.9325 5.82513 8.95729 5.91184 8.9548 5.99993V8.42243H15.0748C15.1497 8.42341 15.2236 8.43913 15.2924 8.46868C15.3612 8.49823 15.4234 8.54105 15.4757 8.59467C15.5279 8.6483 15.5691 8.71169 15.5968 8.78123C15.6245 8.85076 15.6383 8.92508 15.6373 8.99993ZM2.9248 3.62993C2.77562 3.62993 2.63255 3.6892 2.52706 3.79469C2.42157 3.90018 2.3623 4.04325 2.3623 4.19243V13.8074C2.3623 13.9566 2.42157 14.0997 2.52706 14.2052C2.63255 14.3107 2.77562 14.3699 2.9248 14.3699C3.07399 14.3699 3.21706 14.3107 3.32255 14.2052C3.42804 14.0997 3.4873 13.9566 3.4873 13.8074V4.19243C3.48831 4.11829 3.47445 4.04469 3.44654 3.97599C3.41863 3.90729 3.37724 3.84487 3.3248 3.79244C3.27237 3.74 3.20995 3.69861 3.14125 3.6707C3.07255 3.64279 2.99895 3.62893 2.9248 3.62993Z" fill="#8E9198" />
+                    </svg>
+                    <span>Назад</span>
+                </a>
+                <img src="img/cluster.svg" alt="" class="page-header__logo">
+                <div class="text20 medium-text">
+                    Кластеры
+                </div>
+
+                <button class="page-header__add m-btn m-btn-gray-outline">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8.00033 1.62179C9.26183 1.62179 10.495 1.99587 11.5439 2.69672C12.5928 3.39758 13.4103 4.39373 13.8931 5.55921C14.3759 6.72469 14.5022 8.00716 14.2561 9.24442C14.01 10.4817 13.4025 11.6182 12.5105 12.5102C11.6184 13.4022 10.4819 14.0097 9.24467 14.2558C8.0074 14.5019 6.72494 14.3756 5.55946 13.8929C4.39398 13.4101 3.39783 12.5926 2.69697 11.5437C1.99611 10.4948 1.62203 9.26159 1.62203 8.00008C1.62203 6.30845 2.29403 4.68611 3.49019 3.48995C4.68635 2.29378 6.3087 1.62179 8.00033 1.62179M4.81459 8.6345H7.36591V11.1858C7.36591 11.3541 7.43275 11.5154 7.55173 11.6344C7.6707 11.7534 7.83207 11.8202 8.00033 11.8202C8.16859 11.8202 8.32995 11.7534 8.44893 11.6344C8.56791 11.5154 8.63475 11.3541 8.63475 11.1858V8.6345H11.1861C11.3543 8.6345 11.5157 8.56766 11.6347 8.44868C11.7536 8.3297 11.8205 8.16834 11.8205 8.00008C11.8205 7.83182 11.7536 7.67045 11.6347 7.55148C11.5157 7.4325 11.3543 7.36566 11.1861 7.36566H8.63475V4.81434C8.63475 4.64609 8.56791 4.48472 8.44893 4.36574C8.32995 4.24677 8.16859 4.17993 8.00033 4.17993C7.83207 4.17993 7.6707 4.24677 7.55173 4.36574C7.43275 4.48472 7.36591 4.64609 7.36591 4.81434V7.36566H4.81459C4.64633 7.36566 4.48497 7.4325 4.36599 7.55148C4.24701 7.67045 4.18017 7.83182 4.18017 8.00008C4.18017 8.16834 4.24701 8.3297 4.36599 8.44868C4.48497 8.56766 4.64633 8.6345 4.81459 8.6345M8.00033 0.666748C6.54993 0.666748 5.13211 1.09684 3.92615 1.90264C2.72019 2.70843 1.78025 3.85374 1.22521 5.19374C0.67017 6.53373 0.524945 8.00822 0.807903 9.43074C1.09086 10.8533 1.78929 12.1599 2.81488 13.1855C3.84046 14.2111 5.14714 14.9095 6.56966 15.1925C7.99219 15.4755 9.46668 15.3302 10.8067 14.7752C12.1467 14.2202 13.292 13.2802 14.0978 12.0743C14.9036 10.8683 15.3337 9.45048 15.3337 8.00008C15.3319 6.05571 14.5587 4.1915 13.1838 2.81663C11.8089 1.44175 9.94469 0.668554 8.00033 0.666748V0.666748Z" fill="#676A72" />
+                    </svg>
+                    <span>Новый кластер</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="table-filter">
+                <div class="table-filter__col _flex">
+                    <div class="mob-filter">
+                        <button class="_open-filter table-filter__show-btn m-btn m-btn-gray-outline">
+                            <img src="img/filter.svg" alt="">
+                            <span>Фильтр</span>
+                        </button>
+                        <div class="table-filter__mob">
+                            <button class="close-btn _close-filter">
+                                <span class="text14">Закрыть</span>
+                            </button>
+                            <div class="table-filter__items _flex">
+                                <div class="m-select m-select-multi js-multi-select">
+                                    <div class="m-select__show" data-placeholder="Конкурентность">
+
+                                        <img class="_first" src="img/filter.svg" alt="">
+
+                                        <div class="m-select__current text12"></div>
+                                        <div class="m-select__count">
+                                            <span class="text12 _num"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="m-select__hidden">
+                                        <div class="m-search fg">
+                                            <img src="img/search.svg" alt="">
+                                            <input type="text" placeholder="Поиск">
+                                        </div>
+
+                                        <div class="m-select__checks">
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="m-select m-select-multi js-multi-select">
+                                    <div class="m-select__show" data-placeholder="Товары">
+
+                                        <img class="_first" src="img/filter.svg" alt="">
+
+                                        <div class="m-select__current text12"></div>
+                                        <div class="m-select__count">
+                                            <span class="text12 _num"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="m-select__hidden">
+                                        <div class="m-search fg">
+                                            <img src="img/search.svg" alt="">
+                                            <input type="text" placeholder="Поиск">
+                                        </div>
+
+                                        <div class="m-select__checks">
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="m-select m-select-multi js-multi-select">
+                                    <div class="m-select__show" data-placeholder="БАА">
+
+                                        <img class="_first" src="img/filter.svg" alt="">
+
+                                        <div class="m-select__current text12"></div>
+                                        <div class="m-select__count">
+                                            <span class="text12 _num"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="m-select__hidden">
+                                        <div class="m-search fg">
+                                            <img src="img/search.svg" alt="">
+                                            <input type="text" placeholder="Поиск">
+                                        </div>
+
+                                        <div class="m-select__checks">
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="879796444">
+                                                <label><span class="text13">879796444</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="m-select m-select-multi js-multi-select">
+                                    <div class="m-select__show" data-placeholder="Модификация">
+
+                                        <img class="_first" src="img/filter.svg" alt="">
+
+                                        <div class="m-select__current text12"></div>
+                                        <div class="m-select__count">
+                                            <span class="text12 _num"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="m-select__hidden">
+                                        <div class="m-search fg">
+                                            <img src="img/search.svg" alt="">
+                                            <input type="text" placeholder="Поиск">
+                                        </div>
+
+                                        <div class="m-select__checks">
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Renault Duster 2013-2022 хетчбек">
+                                                <label><span class="text13">Renault Duster 2013-2022 хетчбек</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Renault Duster 2013-2022 хетчбек">
+                                                <label><span class="text13">Renault Duster 2013-2022 хетчбек</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Renault Duster 2013-2022 хетчбек">
+                                                <label><span class="text13">Renault Duster 2013-2022 хетчбек</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Renault Duster 2013-2022 хетчбек">
+                                                <label><span class="text13">Renault Duster 2013-2022 хетчбек</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Renault Duster 2013-2022 хетчбек">
+                                                <label><span class="text13">Renault Duster 2013-2022 хетчбек</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Renault Duster 2013-2022 хетчбек">
+                                                <label><span class="text13">Renault Duster 2013-2022 хетчбек</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Renault Duster 2013-2022 хетчбек">
+                                                <label><span class="text13">Renault Duster 2013-2022 хетчбек</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Renault Duster 2013-2022 хетчбек">
+                                                <label><span class="text13">Renault Duster 2013-2022 хетчбек</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Renault Duster 2013-2022 хетчбек">
+                                                <label><span class="text13">Renault Duster 2013-2022 хетчбек</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Renault Duster 2013-2022 хетчбек">
+                                                <label><span class="text13">Renault Duster 2013-2022 хетчбек</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Renault Duster 2013-2022 хетчбек">
+                                                <label><span class="text13">Renault Duster 2013-2022 хетчбек</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="m-select m-select-multi js-multi-select">
+                                    <div class="m-select__show" data-placeholder="Добавлен">
+
+                                        <img class="_first" src="img/filter.svg" alt="">
+
+                                        <div class="m-select__current text12"></div>
+                                        <div class="m-select__count">
+                                            <span class="text12 _num"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="m-select__hidden">
+                                        <div class="m-search fg">
+                                            <img src="img/search.svg" alt="">
+                                            <input type="text" placeholder="Поиск">
+                                        </div>
+
+                                        <div class="m-select__checks">
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="m-select m-select-multi js-multi-select">
+                                    <div class="m-select__show" data-placeholder="Изменен">
+
+                                        <img class="_first" src="img/filter.svg" alt="">
+
+                                        <div class="m-select__current text12"></div>
+                                        <div class="m-select__count">
+                                            <span class="text12 _num"></span>
+                                        </div>
+
+                                    </div>
+                                    <div class="m-select__hidden">
+                                        <div class="m-search fg">
+                                            <img src="img/search.svg" alt="">
+                                            <input type="text" placeholder="Поиск">
+                                        </div>
+
+                                        <div class="m-select__checks">
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                            <div class="m-select__check m-check">
+                                                <input type="checkbox" data-value="Чехлы для рено дастер 2013 года">
+                                                <label><span class="text13">Чехлы для рено дастер 2013 года</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sort-select m-select js-single-select">
+                        <div class="m-select__show" data-placeholder="Сортировка">
+                            <div class="m-select__current text12"></div>
+                            <img src="img/arrows.svg" alt="">
+                        </div>
+                        <div class="m-select__hidden">
+                            <div class="m-select__items">
+                                <div class="m-select__item">
+                                    <input type="radio" name="sortType" data-value="Модификация А-Я">
+                                    <label><span class="text13">Модификация А-Я</span></label>
+                                </div>
+                                <div class="m-select__item">
+                                    <input type="radio" name="sortType" data-value="Кластер А-Я">
+                                    <label><span class="text13">Кластер А-Я</span></label>
+                                </div>
+                                <div class="m-select__item">
+                                    <input type="radio" name="sortType" data-value="Товаров по убыванию">
+                                    <label><span class="text13">Товаров по убыванию</span></label>
+                                </div>
+                                <div class="m-select__item">
+                                    <input type="radio" name="sortType" data-value="Товаров по возрастанию">
+                                    <label><span class="text13">Товаров по возрастанию</span></label>
+                                </div>
+                                <div class="m-select__item">
+                                    <input type="radio" name="sortType" data-value="Конкуренция по убыванию">
+                                    <label><span class="text13">Конкуренция по убыванию</span></label>
+                                </div>
+                                <div class="m-select__item">
+                                    <input type="radio" name="sortType" data-value="Конкуренция по возврастанию">
+                                    <label><span class="text13">Конкуренция по возврастанию</span></label>
+                                </div>
+                                <div class="m-select__item">
+                                    <input type="radio" name="sortType" data-value="Частотность по убыванию">
+                                    <label><span class="text13">Частотность по убыванию</span></label>
+                                </div>
+                                <div class="m-select__item">
+                                    <input type="radio" name="sortType" data-value="Частотность по возрастанию">
+                                    <label><span class="text13">Частотность по возрастанию</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="action">
+                    <button class="action__dots _open-action">
+                        <img src="img/dots.svg" alt="">
+                    </button>
+                    <div class="action__mob">
+                        <button class="close-btn _close-action">
+                            <span class="text14">Закрыть</span>
+                        </button>
+                        <div class="action__buttons _flex">
+                            <button class="action__btn m-btn m-btn-gray-outline">
+                                <img src="img/xls.svg" alt="">
+                                <span>Загрузка кластеров</span>
+                            </button>
+                            <button class="action__btn m-btn m-btn-gray-outline">
+                                <img src="img/xls.svg" alt="">
+                                <span>Выгрузить таблицу кластеров</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table cluster-table">
+                <div class="table-scrollable">
+                    <table>
+                        <thead>
+                            <tr class="table-row table-row-head">
+                                <td class="table-row__col">
+                                    <div class="text13">Кластер</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text13">Добавлен </div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text13">Изменен</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text13">Частотность</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text13">Конкурентность</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text13">Товары</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text13">БАА</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text13">Модификация</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text13">Действия</div>
+                                </td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-row">
+                                <td class="table-row__col">
+                                    <div class="text14">Чехлы для рено дастер 2013 года</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">16; 48</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">Renault Duster 2013-2022 хетчбек</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="table-row__action">
+                                        <button class="table-row__action-btn">
+                                            <img src="img/edit.svg" alt="">
+                                        </button>
+                                        <button class="table-row__action-btn">
+                                            <img src="img/delete.svg" alt="">
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="table-row">
+                                <td class="table-row__col">
+                                    <div class="text14">Чехлы для рено дастер 2013 года</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">16; 48</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">Renault Duster 2013-2022 хетчбек</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="table-row__action">
+                                        <button class="table-row__action-btn">
+                                            <img src="img/edit.svg" alt="">
+                                        </button>
+                                        <button class="table-row__action-btn">
+                                            <img src="img/delete.svg" alt="">
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="table-row">
+                                <td class="table-row__col">
+                                    <div class="text14">Чехлы для рено дастер 2013 года</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">16; 48</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">Renault Duster 2013-2022 хетчбек</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="table-row__action">
+                                        <button class="table-row__action-btn">
+                                            <img src="img/edit.svg" alt="">
+                                        </button>
+                                        <button class="table-row__action-btn">
+                                            <img src="img/delete.svg" alt="">
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="table-row">
+                                <td class="table-row__col">
+                                    <div class="text14">Чехлы для рено дастер 2013 года</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">16; 48</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">Renault Duster 2013-2022 хетчбек</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="table-row__action">
+                                        <button class="table-row__action-btn">
+                                            <img src="img/edit.svg" alt="">
+                                        </button>
+                                        <button class="table-row__action-btn">
+                                            <img src="img/delete.svg" alt="">
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="table-row">
+                                <td class="table-row__col">
+                                    <div class="text14">Чехлы для рено дастер 2013 года</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">16; 48</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">Renault Duster 2013-2022 хетчбек</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="table-row__action">
+                                        <button class="table-row__action-btn">
+                                            <img src="img/edit.svg" alt="">
+                                        </button>
+                                        <button class="table-row__action-btn">
+                                            <img src="img/delete.svg" alt="">
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="table-row">
+                                <td class="table-row__col">
+                                    <div class="text14">Чехлы для рено дастер 2013 года</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">16; 48</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">Renault Duster 2013-2022 хетчбек</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="table-row__action">
+                                        <button class="table-row__action-btn">
+                                            <img src="img/edit.svg" alt="">
+                                        </button>
+                                        <button class="table-row__action-btn">
+                                            <img src="img/delete.svg" alt="">
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="table-row">
+                                <td class="table-row__col">
+                                    <div class="text14">Чехлы для рено дастер 2013 года</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">16; 48</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">Renault Duster 2013-2022 хетчбек</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="table-row__action">
+                                        <button class="table-row__action-btn">
+                                            <img src="img/edit.svg" alt="">
+                                        </button>
+                                        <button class="table-row__action-btn">
+                                            <img src="img/delete.svg" alt="">
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="table-row">
+                                <td class="table-row__col">
+                                    <div class="text14">Чехлы для рено дастер 2013 года</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">16; 48</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">Renault Duster 2013-2022 хетчбек</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="table-row__action">
+                                        <button class="table-row__action-btn">
+                                            <img src="img/edit.svg" alt="">
+                                        </button>
+                                        <button class="table-row__action-btn">
+                                            <img src="img/delete.svg" alt="">
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="table-row">
+                                <td class="table-row__col">
+                                    <div class="text14">Чехлы для рено дастер 2013 года</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">16; 48</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">Renault Duster 2013-2022 хетчбек</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="table-row__action">
+                                        <button class="table-row__action-btn">
+                                            <img src="img/edit.svg" alt="">
+                                        </button>
+                                        <button class="table-row__action-btn">
+                                            <img src="img/delete.svg" alt="">
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="table-row">
+                                <td class="table-row__col">
+                                    <div class="text14">Чехлы для рено дастер 2013 года</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">16; 48</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">Renault Duster 2013-2022 хетчбек</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="table-row__action">
+                                        <button class="table-row__action-btn">
+                                            <img src="img/edit.svg" alt="">
+                                        </button>
+                                        <button class="table-row__action-btn">
+                                            <img src="img/delete.svg" alt="">
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="table-row">
+                                <td class="table-row__col">
+                                    <div class="text14">Чехлы для рено дастер 2013 года</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">07.05.2026 16:24</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">0</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">16; 48</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="text14">Renault Duster 2013-2022 хетчбек</div>
+                                </td>
+                                <td class="table-row__col">
+                                    <div class="table-row__action">
+                                        <button class="table-row__action-btn">
+                                            <img src="img/edit.svg" alt="">
+                                        </button>
+                                        <button class="table-row__action-btn">
+                                            <img src="img/delete.svg" alt="">
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="page-pagination _flex-between">
+                    <div class="page-pagination__col _flex">
+                        <div class="text13 text-gray700">
+                            Показывать по
+                        </div>
+                        <div class="page-count-select m-select js-single-select">
+                            <div class="m-select__show">
+                                <div class="m-select__current text12"></div>
+                            </div>
+                            <div class="m-select__hidden">
+                                <div class="m-select__items">
+                                    <div class="m-select__item">
+                                        <input checked type="radio" name="pageCount" data-value="5">
+                                        <label><span class="text13">5</span></label>
+                                    </div>
+                                    <div class="m-select__item">
+                                        <input type="radio" name="pageCount" data-value="10">
+                                        <label><span class="text13">10</span></label>
+                                    </div>
+                                    <div class="m-select__item">
+                                        <input type="radio" name="pageCount" data-value="25">
+                                        <label><span class="text13">25</span></label>
+                                    </div>
+                                    <div class="m-select__item">
+                                        <input type="radio" name="pageCount" data-value="50">
+                                        <label><span class="text13">50</span></label>
+                                    </div>
+                                    <div class="m-select__item">
+                                        <input type="radio" name="pageCount" data-value="100">
+                                        <label><span class="text13">100</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-pagination__col2 _flex">
+                        <div class="text13 text-gray700">
+                            1-10 of 52
+                        </div>
+                        <div class="pagination">
+                            <button class="pagination__item _disabled"><img src="img/prev.svg" alt=""></button>
+                            <button class="pagination__item _active"><span class="text14">1</span></button>
+                            <button class="pagination__item"><span class="text14">2</span></button>
+                            <button class="pagination__item"><span class="text14">3</span></button>
+                            <button class="pagination__item"><span class="text14">4</span></button>
+                            <button class="pagination__item"><span class="text14">5</span></button>
+                            <button class="pagination__item"><img src="img/next.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/lightpick.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
